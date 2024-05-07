@@ -1,0 +1,23 @@
+
+blip_path: https://storage.googleapis.com/sfr-vision-language-research/BLIP/models/model_large.pth
+med_config: src/config/med_config.json
+
+
+checkpoint_base: checkpoint
+visual_base: visualization
+log_base: log
+
+
+data_base: dataset
+image_base: images
+pair_store_base: pair_store_clip
+
+
+
+BLIP:
+  
+  vit: 'large'
+  image_size: 224
+
+ImageReward:
+  mlp_dim: 768
